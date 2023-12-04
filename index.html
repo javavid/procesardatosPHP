@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulario</h2>
+    <form action="procesar.php" method="post" onsubmit="return enviardatos()">
+        <label for="nombre">NOMBRE</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="apellido">APELLIDO</label>
+        <input type="text" id="apellido" name="apellido" required>
+        <label for="edad">EDAD</label>
+        <input type="text" id="edad" name="edad" required>
+        <button type="submit">ENVIAR</button>
+        </form>
+
+        <script>
+            function enviardatos(){
+                //alerta de envio de datos
+                alert('datos del formulario enviados');
+                return true;
+            }
+        </script> 
+</body>
+</html>
